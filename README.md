@@ -24,10 +24,9 @@ nvidia-docker run --rm --name yolov4_csp -it -v ~/shared_volume/:/shared/ --shm-
 
 # run detection on the video
 python detect.py --source ../shared/video.mp4 --cfg models/yolov4-csp.cfg --weights weights/yolov4-csp.weights --conf-thres 0.5 --classes 0 --output ../shared/output
-
-Output file is saved in shared_volume/output
 ```
 
+Output file is saved in shared_volume/output
 
 ## Citation
 
